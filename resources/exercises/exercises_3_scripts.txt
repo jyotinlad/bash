@@ -1,0 +1,22 @@
+Bash Scripting
+==============
+
+1) Look for examples of where the <() are used on github, and figure out what they're doing. Hint: search for 'process substitution' on github, and filter to shell scripts.
+
+2) Look through your bash history (by typing `history`) and see where you could have used the <() operator.
+
+3) Try various process substitution commands, and plug in variables and quotes to see what happens.
+
+3) Construct a command that uses `$()` and `<()`.
+
+4) Go through all the scripts that your bash startup went through. Read through them and try and understand what they’re doing. If you don’t understand parts of them, try and figure out what’s going on by reading `man bash`.
+
+5) Go through the other files in the diagram that exist on your machine.
+
+6) Read the man page to see what all the options are. Don’t worry if you don’t understand it all yet, just get a feel for what’s there.
+
+7) Set up a shell with unique variables and functions and use set to create a script to recreate those items in another shell.
+
+8) Find a large bash script on a social coding site such as GitHub, and run shellcheck over it. Contribute back any improvements you find.
+
+9) Which `set` flag does nounset correspond to?

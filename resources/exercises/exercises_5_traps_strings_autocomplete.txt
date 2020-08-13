@@ -1,0 +1,16 @@
+Traps, Strings
+==============
+
+1) Construct an 'echo' that has a double-quoted string with a single-quoted string inside, eg one that outputs:
+
+He said 'I thought she'd said "bash was easy when $s are involved" but that can’t be true!'
+
+2) Research the other 'special' signal traps. Use `man bash` for this.
+
+3) Write a shell script that you can’t escape from (the machine it runs on must not be overloaded as a result!) in the terminal.
+
+4) Try and escape from the shell script you created in 1)
+
+5) Ask everyone you know if they can escape the shell script
+
+6) If no-one can escape it, send it to the author :)
