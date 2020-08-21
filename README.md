@@ -24,6 +24,7 @@ An overview of Bash and training materials from courses.
 * Variable: `echo $MYVAR` or `echo ${MYVAR}` - latter is better practice
 * Array Variable: `echo ${MYVAR[n]}`
 * Subsitution: `echo "server: ${hostname}"`
+* Special Characters `echo \x02`
 
 ## Process ID
 Using variable `$PPID`.
@@ -93,3 +94,39 @@ esac
 * Right to Left
   * Shortest: `%*/`
   * Longest: `%%*/`
+
+## Sub Shell
+Using open bracket will start a sub shell.
+```
+(
+  echo hello world
+)
+```
+
+## Help Guide
+`man ascii` - all ASCII characters
+
+## Internal Field Separator
+`IFS = '\t\n`
+
+## Hear Doc
+Putting multiple lines in a file.
+```
+cat > file.txt << END
+  echo hello world
+  END
+```
+
+## Jobs
+* Creation: `sleep 30 &` - sleep for 30 seconds and run in background
+* Wait: `wait` - for jobs to complete (with `-n` for first job)
+* List: `jobs`
+* Kill: `kill %2` - kill job #2
+
+## Signal Codes
+Anything above 128 is a signal code (130 = (130-128) = 2).
+
+## Trap
+Catching signal codes (the `INT` is the code minus `SIG` from the start).
+
+`trap "echo error" INT`
